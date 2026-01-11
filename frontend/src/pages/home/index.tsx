@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { CounterExample } from "@/components/CounterExample";
 
 export default function Home() {
 
@@ -29,6 +30,16 @@ export default function Home() {
             Generate insights from your data.
           </p>
         </div>
+      </div>
+      
+      {/* Zustand Store Demo - Remove this after testing */}
+      <div className="mt-8 rounded-lg border bg-card p-6 shadow-sm">
+        <h2 className="text-xl font-semibold mb-4">🧪 Zustand Store Demo</h2>
+        <p className="text-sm text-muted-foreground mb-4">
+          This is a demo of the Zustand store with Redux DevTools integration. 
+          Click the buttons below and watch the Redux DevTools extension!
+        </p>
+        <CounterExample />
       </div>
     </div>
   )
